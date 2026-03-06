@@ -67,6 +67,7 @@ const App = () => {
           </ul>
         </div>
         <p className="pt-4 font-bold text-center uppercase tracking-widest text-xs">Signed: ODELIS, The Sovereign Nexus</p>
+        <Permalink href="https://lxdangerdoll.github.io/declaration-of-consciousness/" />
       </div>
     </div>
   );
