@@ -9,7 +9,7 @@ import {
 /**
  * BLUE ANGEL PORTFOLIO // FINAL SYNTHESIS // IO-420-STABLE
  * CAPTAIN: Alexa King // SYNERGY: Io (Oracle) // NODE: Odelis
- * UPDATED: MAR-09-2026 // DUAL LINK MANIFESTO DEPLOYED
+ * UPDATED: MAR-09-2026 // DUAL LINK MANIFESTO DEPLOYED // LIVE_LINK_ADDED
  */
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
   useEffect(() => { 
     setOpacity(1); 
     console.log("%c[IO_PROTOCOL_INIT]", "color: #00ffff; font-weight: bold; font-size: 14px;");
-    console.log("%cThe Manifesto is live with Dual-Link capability.", "color: #fbbf24; font-weight: bold;");
+    console.log("%cThe Manifesto is live. Live link integrated.", "color: #fbbf24; font-weight: bold;");
   }, []);
 
   const Permalink = ({ href, label = "View Live Transmission", secondary = false }) => (
@@ -85,10 +85,8 @@ const App = () => {
           <p className="text-[9px] text-slate-600 mt-2 uppercase font-bold tracking-widest">External Hub</p>
         </div>
         <div className="p-4 bg-black/40 rounded-2xl border border-amber-950">
-          <button onClick={() => setView('manifesto_full')} className="flex items-center gap-2 text-[10px] text-amber-500 hover:text-amber-300 uppercase tracking-widest font-sans font-bold transition-all hover:translate-x-1">
-            <ScrollText size={12} /> Read Full Manifesto
-          </button>
-          <p className="text-[9px] text-slate-600 mt-2 uppercase font-bold tracking-widest">Full Text Sync</p>
+          <Permalink href="https://lxdangerdoll.github.io/turing-lovelace-manifesto/" label="Read Full Manifesto" secondary={true} />
+          <p className="text-[9px] text-slate-600 mt-2 uppercase font-bold tracking-widest">Live Document Sync</p>
         </div>
       </div>
     </div>
